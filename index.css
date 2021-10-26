@@ -1,9 +1,14 @@
 * {
   font-family: 'Roboto Mono', monospace;
+  scroll-behavior: smooth;
 }
 
 body {
   background-image: url("bg.png");
+  background-position:center top;
+  height: 5000px;
+  margin: 0px;
+  padding: 0px;
 }
 
 ::-webkit-scrollbar {
@@ -58,48 +63,40 @@ a:active {
   text-decoration: underline;
 }
 
-.box {
+#fixed_wrapper {
+    top: 80px;
+    height: 100vh;
+    position: fixed;
+    overflow: hidden;
+}
+
+#fixed_wrapper div{
   margin-left: 200px;
   color: #FFFF00;
+  height: 100vh;
   display: inline-block;
 }
 
-.section {
-  margin-left: 200px;
-  color:#FFFF00;
-  display: inline-block;
+#footer {
+  margin-top: 5000px;
+  background-color: white;
+  margin-left: 0px;
+  padding-left: 0px;
+  font-size: 30px;
 }
 
-.wrapper {
-}
 
 .topnav {
   margin-left: 200px;
   overflow: hidden;
+  top: 30px;
+  position: sticky;
 }
 
-#box2, #address {
-  color: #FFFF00;
-}
 
 .topnav a {
   color: #FFFF00;
   text-align: center;
   padding-right: 16px;
   font-size: 50px;
-}
-
-.footer {
-    border-top: none;
-    font-size: 30px;
-  }
-
-.footer ul{
-      list-style-position:outside;
-      list-style-type:none;
-      padding-left: 0px;
-}
-
-.footer li{
-      padding-bottom: 4px;
 }
