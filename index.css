@@ -8,8 +8,9 @@ body {
 }
 
 #bg {
-  margin-left: 900px;
-  margin-top: 90px;
+  margin-left: 750px;
+  margin-top: 0px;
+  padding: 0px;
 }
 
 ::-webkit-scrollbar {
@@ -17,7 +18,7 @@ body {
 }
 
 h1 {
-  font-size: 70px;
+  font-size: 60px;
 }
 
 h2 {
@@ -41,7 +42,7 @@ h6 {
 }
 
 p {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 a {
@@ -68,7 +69,7 @@ a:active {
     top: 80px;
     height: 100vh;
     position: fixed;
-    width: 850px;
+    width: 700px;
     overflow: hidden;
 }
 
@@ -82,7 +83,7 @@ a:active {
 #footer {
   margin-top: 5000px;
   background-color: white;
-  margin-left: 900px;
+  margin-left: 100px;
   padding-left: 0px;
   font-size: 30px;
 }
