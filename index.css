@@ -4,6 +4,12 @@
 }
 
 body {
+
+}
+
+#bg {
+  margin-left: 900px;
+  margin-top: 90px;
 }
 
 ::-webkit-scrollbar {
@@ -62,12 +68,13 @@ a:active {
     top: 80px;
     height: 100vh;
     position: fixed;
+    width: 850px;
     overflow: hidden;
 }
 
 #fixed_wrapper div{
-  margin-left: 200px;
-  color: #FFFF00;
+  margin-left: 100px;
+  color: black;
   height: 100vh;
   display: inline-block;
 }
@@ -75,14 +82,14 @@ a:active {
 #footer {
   margin-top: 5000px;
   background-color: white;
-  margin-left: 0px;
+  margin-left: 900px;
   padding-left: 0px;
   font-size: 30px;
 }
 
 
 .topnav {
-  margin-left: 200px;
+  margin-left: 100px;
   overflow: hidden;
   top: 30px;
   position: sticky;
@@ -90,8 +97,8 @@ a:active {
 
 
 .topnav a {
-  color: #FFFF00;
+  color: darkblue;
   text-align: center;
   padding-right: 16px;
-  font-size: 50px;
+  font-size: 30px;
 }
