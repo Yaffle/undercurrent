@@ -15,17 +15,12 @@ body {
 }
 
 #invest {
-  color: blue;
-
-}
-
-#re {
-  color: gold;
+  color: #0000CD;
 
 }
 
 #threefour{
-  color: blue;
+  color: #0000CD;
 }
 
 ::-webkit-scrollbar {
