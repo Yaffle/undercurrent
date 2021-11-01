@@ -21,12 +21,12 @@ body {
 }
 
 #invest {
-  color: grey;
+  color: #696969;
 
 }
 
 #threefour{
-  color: black;
+  color: #696969;
 }
 
 ::-webkit-scrollbar {
@@ -98,6 +98,12 @@ a:active {
 }
 
 #music {
+  position: relative;
+  overflow-y: scroll;
+}
+
+#podium {
+  max-height: calc(100vh - 120px);
   position: relative;
   overflow-y: auto;
 }
