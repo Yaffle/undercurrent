@@ -14,13 +14,19 @@ body {
   padding: 0px;
 }
 
+#bg1 {
+  margin-left: 750px;
+  margin-top: 100px;
+  padding: 0px;
+}
+
 #invest {
-  color: blue;
+  color: grey;
 
 }
 
 #threefour{
-  color: blue;
+  color: black;
 }
 
 ::-webkit-scrollbar {
