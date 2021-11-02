@@ -21,12 +21,12 @@ body {
 }
 
 #invest {
-  color: black;
+  color: blue;
 
 }
 
 #threefour{
-  color: midnightblue;
+  color: black;
 }
 
 ::-webkit-scrollbar {
@@ -86,11 +86,12 @@ a:active {
     top: 80px;
     height: 100vh;
     position: fixed;
-    width: 650px;
+    width: 700px;
     overflow: hidden;
 }
 
 #fixed_wrapper div{
+  margin-top: 90px;
   margin-left: 90px;
   color: black;
   height: 100vh;
