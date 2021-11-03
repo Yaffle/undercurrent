@@ -127,6 +127,7 @@ a:active {
 #circle {
   height: 23px;
   width: 23px;
+<<<<<<< HEAD
 }
 
 #footer_links {
@@ -136,6 +137,8 @@ a:active {
 .links {
   height: 23px;
   width: 23px;
+=======
+>>>>>>> 3e30b90bed2a1db0101934417fdb0f40ddc5a5e7
 }
 
 .topnav {
