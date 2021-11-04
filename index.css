@@ -98,6 +98,7 @@ a:active {
 }
 
 #music {
+  max-height: calc(100vh - 80px);
   position: relative;
   overflow-y: scroll;
 }
@@ -124,21 +125,9 @@ a:active {
 
 }
 
-#circle {
-  height: 23px;
-  width: 23px;
-<<<<<<< HEAD
-}
-
-#footer_links {
-  margin-left: 0px;
-}
-
 .links {
   height: 23px;
   width: 23px;
-=======
->>>>>>> 3e30b90bed2a1db0101934417fdb0f40ddc5a5e7
 }
 
 .topnav {
