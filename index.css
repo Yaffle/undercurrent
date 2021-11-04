@@ -6,6 +6,8 @@
 body {
   margin-top: 0px;
   padding-top: 0px;
+  height: 100%;
+  width: 100%;
 }
 
 #bg {
@@ -98,13 +100,11 @@ a:active {
 }
 
 #music {
-  max-height: calc(100vh - 80px);
   position: relative;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 #podium {
-  max-height: calc(100vh - 120px);
   position: relative;
   overflow-y: auto;
 }
@@ -135,6 +135,7 @@ a:active {
   overflow: hidden;
   top: 30px;
   position: sticky;
+  width: 100vw;
 }
 
 
