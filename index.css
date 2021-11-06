@@ -7,7 +7,6 @@ body {
   margin-top: 0px;
   padding-top: 0px;
   height: 100%;
-  width: 100%;
 }
 
 #bg {
@@ -32,7 +31,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-    display: none;
+    /*display: none;*/
 }
 
 h1 {
@@ -84,19 +83,37 @@ a:active {
   text-decoration: none;
 }
 
+.images {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  bottom: 0;
+}
+
 #fixed_wrapper {
-    top: 80px;
-    height: 100vh;
-    position: fixed;
-    width: 700px;
-    overflow: hidden;
+  height: 12000px;
 }
 
 #fixed_wrapper div{
+  width: 700px;
+  padding-top: 5em;
   margin-left: 90px;
   color: black;
-  height: 100vh;
-  display: inline-block;
+  /*display: inline-block;*/
+  position: fixed;
+  top: 0;
+  transition: transform 1s;
+  transform: translateY(100vh);
+}
+
+#fixed_wrapper div:target {
+  transform: translateY(0);
+}
+
+#fixed_wrapper div:target ~ div {
+  transform: translateY(-100vh);
 }
 
 #music {
@@ -131,11 +148,14 @@ a:active {
 }
 
 .topnav {
-  margin-left: 90px;
+  background: whitesmoke;
+  box-sizing: border-box;
+  padding-left: 90px;
   overflow: hidden;
   top: 30px;
-  position: sticky;
+  position: fixed;
   width: 100vw;
+  z-index: 1;
 }
 
 

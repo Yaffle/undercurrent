@@ -9,9 +9,35 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="index.css">
   <link rel="shortcut icon" type="image/svg" href="logo.svg" />
+  <script>
+    var y0 = window.pageYOffset;
+    window.onscroll = function () {
+      var y = window.pageYOffset;
+      var d = y - y0;
+      y0 = y;
+      var element = document.querySelector(':target');
+      var rect = element.getBoundingClientRect();
+      //rect.bottom
+      var top = Number.parseFloat(getComputedStyle(element).top);
+      var vh = window.innerHeight;
+      var newTop = (Math.max(Math.min(top - d, 0), vh - rect.height));
+      element.style.top = newTop + 'px';
+      console.log(element.style.top);
+
+      if (Math.abs(newTop - top) < 0.5) {
+        document.querySelector('.images').style.scrollBehavior = 'auto';
+        document.querySelector('.images').scrollTop += d;
+      }
+    };
+    window.onhashchange = function () {
+      y0 = 1/0;
+      window.onscroll();
+    };
+  </script>
 </head>
 
-<body><img src="" alt="">
+<body>
+
   <div class="topnav">
     <a href="#top"><img src="logo.svg" id="logo"/></a>
     <a href="#music">What Is This about</a>
@@ -19,6 +45,7 @@
     <a id="invest" href="#footer">Invest</a>
   </div>
 
+<div class="images">
   <img id="bg1" src="3.jpeg" alt="top view"></img>
   <img id="bg1" src="2.jpeg" alt="top view"></img>
   <img id="bg1" src="4.jpeg" alt="top view"></img>
@@ -34,6 +61,7 @@
   <img id="bg1" src="3.jpeg" alt="top view"></img>
   <img id="bg1" src="2.jpeg" alt="top view"></img>
   <img id="bg1" src="4.jpeg" alt="top view"></img>
+</div>
 
   <div id="fixed_wrapper">
     <a id="top" style="display:block;"></a>
